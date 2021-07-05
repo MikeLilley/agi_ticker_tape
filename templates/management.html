@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/skel.min.js"></script>
+    <script src="static/js/skel-layers.min.js"></script>
+    <script src="static/js/init.js"></script>
+    <script src="static/js/handler_functions.js"></script>
+    <script src="static/js/jquery.dataTables.min.js"></script>
+
+		<link rel="stylesheet" href="static/css/skel.css"/>
+		<link rel="stylesheet" href="static/css/style.css"/>
+		<link rel="stylesheet" href="static/css/style-small.css"/>
+    <link rel="stylesheet" href="static/css/jquery.dataTables.min.css"/>
+</head>
+
+<body class="landing">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <nav id="nav">
+            <ul>
+                <li><a href="query">Query</a></li>
+                <li><a href="management">Knowledge Management</a></li>
+                <li><a href="diagnostics">Diagnostics</a></li>
+                <li><a href="about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+        <h2>AGI Ticker Tape</h2>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style1">
+        <div class="container 75%">
+            <div class="row 100%">
+                <div class="6u$ 12u$(medium)">
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------->
+
+    <div class="pic"></div>
+    <div class="container">
+
+    <h2>Knowledge Management Page</h2>
+    <h3>Process New Information<h3>
+      <form id="upload_knowledge" enctype = "multipart/form-data" action=javascript:new_knowledge()>
+          <input type="file" id="file_input" name="file_input" size="100">
+          <input type="text" id="website_input" placeholder="Enter a Website Link" name="web_link" size="100" id="web_link">
+          <input type="text" id="new_knowledge_status" placeholder="Upload Status" name="status" size="100" id="status" readonly>
+          <input type='submit' value="Query File" name="Query File Button">
+      </form>
+    <h3>Manage Knowledge Base<h3>
+      <select id="table_select" name="table_select" onchange="javascript:get_database_table()">
+      <option disabled selected value> Select a Table </option>
+      <option value = "Sources"> Sources</option>
+      <option value = "Statements"> Statements</option>
+      <option value = "Words"> Words</option>
+      </select>
+      <br>
+      <table id="knowledge_database" class="display">
+  </table>
+
+    </div>
+
+        <!------------------------------------->
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                Made by Bryant Dumas, Michael Lilley, Shanmukh Mandava, and Ryan Way for Carl Goran
+            </div>
+        </footer>
+
+</body>
+
+</html>

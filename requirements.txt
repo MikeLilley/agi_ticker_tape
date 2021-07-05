@@ -1,0 +1,9 @@
+flask
+pyodbc
+nltk
+torch
+numpy
+pandas
+requests
+bs4
+transformers

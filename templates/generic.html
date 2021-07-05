@@ -1,0 +1,91 @@
+<html>
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/skel.min.js"></script>
+    <script src="static/js/skel-layers.min.js"></script>
+    <script src="static/js/init.js"></script>
+
+    <noscript>
+			<link rel="stylesheet" href="static/css/skel.css" />
+			<link rel="stylesheet" href="static/css/style.css" />
+			<link rel="stylesheet" href="static/css/style-small.css" />
+		</noscript>
+</head>
+
+<body class="landing">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <nav id="nav">
+            <ul>
+                <li><a href="query.html">Query</a></li>
+                <li><a href="management.html">Management</a></li>
+                <li><a href="diagnostics.html">Diagnostics</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+        <h2>AGI Ticker Tape</h2>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style1">
+        <div class="container 75%">
+            <div class="row 100%">
+                <div class="6u$ 12u$(medium)">
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------->
+
+    <div class="pic"></div>
+    <div class="container">
+
+    <!------------------------------------->
+
+<div id="Query">
+<h3>Query Page</h3>
+<form action="table_pages/data_files/get_records.py" method="POST">
+<input type="text" placeholder="Please enter a question" name="Query!" size="100">
+<input type="text" placeholder="Result" name="result" size="100">
+<input type='submit' value="Query" name="Query Button">
+</form>
+
+</div>
+
+<div id="Query_File">
+<form enctype = "multipart/form-data" action="table_pages/data_files/get_records_file.py" method="POST">
+<input type="file" name="filename" size="100">
+<br>
+<input type='submit' value="Query File" name="Query File Button">
+</form>
+<textarea style="resize:none" id="w3review" name="w3review" rows="3" cols="10" placeholder="Results from Questions CSV File" readonly></textarea>
+
+</div>
+
+<!------------------------------------->
+
+<!-- Footer -->
+<footer id="footer">
+<div class="container">
+Made by Bryant Dumas, Michael Lilley, Shanmukh Mandava, and Ryan Way for Carl Goran
+</div>
+</footer>
+
+</body>
+
+</html>
